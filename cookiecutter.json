@@ -1,0 +1,13 @@
+{
+    "project_name": "project name",
+    "group": "com.tnbozman",
+    "project_slug": "{{cookiecutter.project_name|lower|replace(' ', '_')|replace('-', '_')}}",
+    "project_snakecase": "{{cookiecutter.project_name|lower|replace(' ', '-')|replace('_', '-')}}",
+    "package": "{{cookiecutter.group|lower}}.{{cookiecutter.project_slug}}",
+    "package_dir": "{{cookiecutter.package|replace('.', '/')}}",
+    "version": "0.0.1-SNAPSHOT",
+    "java_version": "11",
+    "author": "tnbozman",
+    "version_control": ["git", "none"]
+}
+
